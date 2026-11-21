@@ -332,6 +332,27 @@ textarea {
   color: var(--muted);
 }
 
+.task-delete {
+  flex-shrink: 0;
+  align-self: center;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  padding: 8px 10px;
+  min-height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task-delete:hover,
+.task-delete:focus-visible {
+  color: var(--pine-deep);
+  background: color-mix(in srgb, var(--pine) 12%, transparent);
+  outline: none;
+}
+
 .field {
   display: grid;
   gap: 6px;

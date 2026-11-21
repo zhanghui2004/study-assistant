@@ -229,6 +229,13 @@ export default function StudyApp() {
     });
   }
 
+  function removeTask(id: string) {
+    if (!data) return;
+    const target = data.tasks.find((t) => t.id === id);
+    patch({ tasks: data.tasks.filter((t) => t.id !== id) });
+    if (target) showToast(`已删除「${target.text}」`);
+  }
+
   function addMaterialFromText(title: string, content: string) {
     if (!data) return;
     const m: Material = {
@@ -452,6 +459,15 @@ export default function StudyApp() {
                         <em className="task-mins"> · {t.minutesSpent} 分钟</em>
                       ) : null}
                     </span>
+                    <button
+                      type="button"
+                      className="task-delete"
+                      aria-label={`删除 ${t.text}`}
+                      title="删除"
+                      onClick={() => removeTask(t.id)}
+                    >
+                      删除
+                    </button>
                   </li>
                 ))}
                 {!todayTasks.length && (
