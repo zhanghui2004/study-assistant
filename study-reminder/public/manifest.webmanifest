@@ -1,0 +1,67 @@
+{
+  "id": "/",
+  "name": "加油学",
+  "short_name": "加油学",
+  "description": "温柔而坚定的学习提醒与鼓励 — 适合 Android 主屏幕",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#eef5f1",
+  "theme_color": "#1a5c4a",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "categories": ["education", "productivity", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/narrow-hero.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "加油学欢迎页"
+    },
+    {
+      "src": "/screenshots/narrow-today.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "今日学习进度"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "今日学习",
+      "short_name": "今日",
+      "url": "/?source=pwa&tab=today",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
